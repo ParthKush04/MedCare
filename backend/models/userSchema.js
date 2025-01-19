@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
     maxLength: [12, "Aadhar number must contain exactly 12 digits !"],
   },
   dob :{
-    type : String,
+    type : String, // "Cast to date failed for value \"27/8/2004\" (type string) at path \"dob\""
     required : [true , "DOB is required"],
   },
   gender:{
